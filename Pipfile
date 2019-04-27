@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==2.2"
+
+[dev-packages]
+"flake8" = "==3.7.7"
+"autopep8" = "==1.4.4"
+
+[requires]
+python_version = "3.7"
