@@ -1,0 +1,6 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    config/settings/base.py
+    config/settings/local.py
