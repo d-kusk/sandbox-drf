@@ -15,4 +15,6 @@ python_version = "3.7"
 
 [scripts]
 
-start = "./manage.py runserver --settings=config.settings.local"
+start = "pipenv run start-local"
+start-local = "./manage.py runserver --settings=config.settings.local"
+migrate-local = "./manage.py migrate --settings=config.settings.local"
