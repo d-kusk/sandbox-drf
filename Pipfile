@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 django = "==2.2"
+djangorestframework = "*"
+django-filter = "*"
 
 [dev-packages]
 "flake8" = "==3.7.7"
@@ -14,7 +16,6 @@ django = "==2.2"
 python_version = "3.7"
 
 [scripts]
-
 start = "pipenv run start-local"
 start-local = "./manage.py runserver --settings=config.settings.local"
 migrate-local = "./manage.py migrate --settings=config.settings.local"
