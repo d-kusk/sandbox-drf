@@ -12,3 +12,7 @@ django = "==2.2"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+
+start = "./manage.py runserver --settings=config.settings.local"
