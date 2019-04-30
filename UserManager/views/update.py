@@ -1,14 +1,14 @@
 from rest_framework.generics import GenericAPIView
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.mixins import UpdateModelMixin
 from django.contrib.auth import get_user_model
 from UserManager.serializers import UserSerializer
 
 User = get_user_model()
 
 
-class UserCreateView(CreateModelMixin, GenericAPIView):
+class UserUpdateView(UpdateModelMixin, GenericAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-    def post(self, request, *args, **kwargs):
-        return self.create(request, *args, **kwargs)
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
